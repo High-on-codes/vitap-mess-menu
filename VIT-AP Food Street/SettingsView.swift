@@ -82,10 +82,10 @@ struct SettingsView: View {
                 }
 
                 Section("About") {
-                    Link(destination: URL(string: "https://high-on-codes.github.io/VIT-APmenu/support.html")!) {
+                    Link(destination: URL(string: "https://example.com/support.html")!) {
                         Label("Support", systemImage: "questionmark.circle")
                     }
-                    Link(destination: URL(string: "https://high-on-codes.github.io/VIT-APmenu/privacy.html")!) {
+                    Link(destination: URL(string: "https://example.com/privacy.html")!) {
                         Label("Privacy Policy", systemImage: "hand.raised")
                     }
                 }

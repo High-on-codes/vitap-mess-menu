@@ -43,7 +43,7 @@ Live hostel mess menus for VIT-AP, with a Home Screen widget, per-hostel operato
 
 ## Why this exists
 
-VIT-AP publishes its mess menu as a monthly Excel file. To find out what's for dinner you have to find the latest file, open a very wide spreadsheet on a phone, work out which of two alternating menus applies to today's date, and hope you're reading the right hostel.
+The mess menu changes every month and comes as a spreadsheet, which is hard to read on a phone, especially when you also need to work out which of two alternating menus applies today.
 
 It's also more complicated than it looks: **each hostel block runs its own mess**, and **each weekday alternates between two different menus**.
 
@@ -205,7 +205,7 @@ Widget extensions run under a tight memory budget, and the Firestore SDK is heav
 
 Real menus are messier than sample ones. A few that shaped the code:
 
-**Dinner was showing snacks.** One hostel's file labelled its header `Dates` instead of `Day` and added a `Style` column between Lunch and Snacks. The header check failed, the parser fell back to a hardcoded layout, and every later column landed one meal off. Tea and puffs became dinner, and the real dinner column was never read. *Lesson: a silent fallback is worse than a loud failure.*
+**Dinner was showing snacks.** One spreadsheet labelled its header `Dates` instead of `Day` and added a `Style` column between Lunch and Snacks. The header check failed, the parser fell back to a hardcoded layout, and every later column landed one meal off. Tea and puffs became dinner, and the real dinner column was never read. *Lesson: a silent fallback is worse than a loud failure.*
 
 **Two sheets, one title.** Plan detection looked for the word `SPECIAL` in the title cell, but one workbook used identical titles on both sheets, so Special data overwrote Regular. The tab name was the only reliable signal, which is why the parser now reads `workbook.xml`. *Lesson: when a file has metadata, use it.*
 
@@ -224,7 +224,7 @@ git clone https://github.com/High-on-codes/vitap-mess-menu.git
 ```
 
 1. **Open** `VIT-AP Food Street.xcodeproj`. Swift Package Manager fetches Firebase automatically.
-2. **Set your identifiers.** In both targets choose your signing team and replace `com.example.VITAPMenu` with your own bundle ID. Then create an App Group and update it in both `.entitlements` files and in `WidgetSharedStore.swift`.
+2. **Set your identifiers.** In both targets choose your signing team and replace `com.example.VITAPMenu` with your own bundle ID. Then create an App Group and update it in both `.entitlements` files and in `WidgetSharedStore.swift`. Point the Support and Privacy links in `SettingsView.swift` at your own pages.
 3. **Create a Firebase project.** Add an iOS app with your bundle ID, then enable **Email/Password** sign-in and **Cloud Firestore**.
 4. **Add your config.** Download `GoogleService-Info.plist` into the `VIT-AP Food Street` folder. It's gitignored, and `GoogleService-Info.example.plist` shows the expected shape.
 5. **Set the super admin.** Replace `admin@example.com` in **both** `AppConfig.swift` and `firestore.rules`.
@@ -274,7 +274,7 @@ The Xcode project keeps its original working name, `VIT-AP Food Street`.
 
 Issues and pull requests are welcome. Good places to start:
 
-- Support for other hostels' spreadsheet formats (attach a sample file to an issue)
+- Support for more spreadsheet layouts
 - Dietary tags for veg and non-veg items
 - Lock Screen widgets
 - An automated test suite for the parser
