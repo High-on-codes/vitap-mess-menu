@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E1C24322D406C1986EA10C /* WidgetSharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AEDDFB86D709E882A5804 /* WidgetSharedStore.swift */; };
+		0F4D53414BAE94B08D4DED3C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DCC683CE2778BADD14CA1893 /* FirebaseFirestore */; };
+		1145DBF468A208A51B71C585 /* MessMenuWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 152E9B0B759E1D5F9C0F01BD /* MessMenuWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4CC0303073AD4D3B8F28ABD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD4A66B908E7C5A78B0F64F /* Foundation.framework */; };
+		55989BF8F9F3A010DB3E4A7C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 30EEF1264E774A38DA69A43F /* FirebaseAuth */; };
+		E5BA8E47CA529D943A6D02F6 /* RealMenuSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350EDB2DA2249292E2D05817 /* RealMenuSeed.swift */; };
+		F389E5B18CD748E2BDC1D622 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BEBBB825D2E9008ABF907C /* Models.swift */; };
+		FFE9354C20E7184711978CB2 /* MessMenuWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30BC2574ECC8BEC548182B /* MessMenuWidget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DED9EA407EBBA42883DF301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED7B3A03049F1FD0096454E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01E628ACD7B97D286C07B205;
+			remoteInfo = MessMenuWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		527E29F85F038CF6AC5EC3A5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1145DBF468A208A51B71C585 /* MessMenuWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		152E9B0B759E1D5F9C0F01BD /* MessMenuWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessMenuWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		350EDB2DA2249292E2D05817 /* RealMenuSeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RealMenuSeed.swift; path = "VIT-AP Food Street/RealMenuSeed.swift"; sourceTree = "<group>"; };
+		6ED7B3A83049F1FD0096454E /* VIT-AP Food Street.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIT-AP Food Street.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0AEDDFB86D709E882A5804 /* WidgetSharedStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WidgetSharedStore.swift; path = "VIT-AP Food Street/WidgetSharedStore.swift"; sourceTree = "<group>"; };
+		A5BEBBB825D2E9008ABF907C /* Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Models.swift; path = "VIT-AP Food Street/Models.swift"; sourceTree = "<group>"; };
+		B06A0D4151D4816E3B5F3196 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46AC8D9CFBCE8D314032007 /* MessMenuWidget.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = MessMenuWidget.entitlements; sourceTree = "<group>"; };
+		CF30BC2574ECC8BEC548182B /* MessMenuWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MessMenuWidget.swift; sourceTree = "<group>"; };
+		FCD4A66B908E7C5A78B0F64F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		49EDDAA9D88314238C99BA63 /* Exceptions for "VIT-AP Food Street" folder in "VIT-AP Food Street" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6ED7B3A73049F1FD0096454E /* VIT-AP Food Street */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6ED7B3AA3049F1FD0096454E /* VIT-AP Food Street */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				49EDDAA9D88314238C99BA63 /* Exceptions for "VIT-AP Food Street" folder in "VIT-AP Food Street" target */,
+			);
+			path = "VIT-AP Food Street";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36BCFBA7165C78C4655635E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC0303073AD4D3B8F28ABD5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED7B3A53049F1FD0096454E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55989BF8F9F3A010DB3E4A7C /* FirebaseAuth in Frameworks */,
+				0F4D53414BAE94B08D4DED3C /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00A464847B74CDDB38B6AF2D /* MessMenuWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B06A0D4151D4816E3B5F3196 /* Info.plist */,
+				CF30BC2574ECC8BEC548182B /* MessMenuWidget.swift */,
+				B46AC8D9CFBCE8D314032007 /* MessMenuWidget.entitlements */,
+			);
+			path = MessMenuWidget;
+			sourceTree = "<group>";
+		};
+		4C8D75CC8259396C8E99CF1C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FCD4A66B908E7C5A78B0F64F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6ED7B39F3049F1FD0096454E = {
+			isa = PBXGroup;
+			children = (
+				6ED7B3AA3049F1FD0096454E /* VIT-AP Food Street */,
+				6ED7B3A93049F1FD0096454E /* Products */,
+				D914FFFA9DE5A18B901A7BF0 /* Frameworks */,
+				00A464847B74CDDB38B6AF2D /* MessMenuWidget */,
+				A5BEBBB825D2E9008ABF907C /* Models.swift */,
+				350EDB2DA2249292E2D05817 /* RealMenuSeed.swift */,
+				9F0AEDDFB86D709E882A5804 /* WidgetSharedStore.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		6ED7B3A93049F1FD0096454E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ED7B3A83049F1FD0096454E /* VIT-AP Food Street.app */,
+				152E9B0B759E1D5F9C0F01BD /* MessMenuWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D914FFFA9DE5A18B901A7BF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C8D75CC8259396C8E99CF1C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01E628ACD7B97D286C07B205 /* MessMenuWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4FECBF7E24E63406BA7D274 /* Build configuration list for PBXNativeTarget "MessMenuWidget" */;
+			buildPhases = (
+				62165BB5C29FF70BB59C6CFD /* Sources */,
+				36BCFBA7165C78C4655635E2 /* Frameworks */,
+				E7217B79FA956D0E4242E454 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessMenuWidget;
+			productName = MessMenuWidget;
+			productReference = 152E9B0B759E1D5F9C0F01BD /* MessMenuWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6ED7B3A73049F1FD0096454E /* VIT-AP Food Street */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED7B3B53049F1FE0096454E /* Build configuration list for PBXNativeTarget "VIT-AP Food Street" */;
+			buildPhases = (
+				6ED7B3A43049F1FD0096454E /* Sources */,
+				6ED7B3A53049F1FD0096454E /* Frameworks */,
+				6ED7B3A63049F1FD0096454E /* Resources */,
+				527E29F85F038CF6AC5EC3A5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82815845C6D0054E210B4624 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6ED7B3AA3049F1FD0096454E /* VIT-AP Food Street */,
+			);
+			name = "VIT-AP Food Street";
+			packageProductDependencies = (
+				30EEF1264E774A38DA69A43F /* FirebaseAuth */,
+				DCC683CE2778BADD14CA1893 /* FirebaseFirestore */,
+			);
+			productName = "VIT-AP Food Street";
+			productReference = 6ED7B3A83049F1FD0096454E /* VIT-AP Food Street.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ED7B3A03049F1FD0096454E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					6ED7B3A73049F1FD0096454E = {
+						CreatedOnToolsVersion = 26.5;
+						LastSwiftMigration = 2650;
+					};
+				};
+			};
+			buildConfigurationList = 6ED7B3A33049F1FD0096454E /* Build configuration list for PBXProject "VIT-AP Food Street" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6ED7B39F3049F1FD0096454E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				58BFDD9DFC4886D3DACE8B59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6ED7B3A93049F1FD0096454E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6ED7B3A73049F1FD0096454E /* VIT-AP Food Street */,
+				01E628ACD7B97D286C07B205 /* MessMenuWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6ED7B3A63049F1FD0096454E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7217B79FA956D0E4242E454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62165BB5C29FF70BB59C6CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE9354C20E7184711978CB2 /* MessMenuWidget.swift in Sources */,
+				F389E5B18CD748E2BDC1D622 /* Models.swift in Sources */,
+				E5BA8E47CA529D943A6D02F6 /* RealMenuSeed.swift in Sources */,
+				00E1C24322D406C1986EA10C /* WidgetSharedStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED7B3A43049F1FD0096454E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82815845C6D0054E210B4624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MessMenuWidget;
+			target = 01E628ACD7B97D286C07B205 /* MessMenuWidget */;
+			targetProxy = 7DED9EA407EBBA42883DF301 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E3D6435308914882ECC29D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = MessMenuWidget/MessMenuWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MessMenuWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "VIT AP Menu";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.VITAPMenu.MessMenuWidget.widget";
+				PRODUCT_MODULE_NAME = MessMenuWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6ED7B3B33049F1FE0096454E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6ED7B3B43049F1FE0096454E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6ED7B3B63049F1FE0096454E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "VIT-AP Food Street/VIT-AP_Food_Street.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VIT-AP Food Street/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VIT AP Menu";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.VITAPMenu.MessMenuWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VIT-AP Food Street/VIT-AP Food Street-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6ED7B3B73049F1FE0096454E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "VIT-AP Food Street/VIT-AP_Food_Street.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VIT-AP Food Street/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VIT AP Menu";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.VITAPMenu.MessMenuWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VIT-AP Food Street/VIT-AP Food Street-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6D681FF1BAFB7D8F4AFB245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = MessMenuWidget/MessMenuWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MessMenuWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "VIT AP Menu";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.VITAPMenu.MessMenuWidget.widget";
+				PRODUCT_MODULE_NAME = MessMenuWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6ED7B3A33049F1FD0096454E /* Build configuration list for PBXProject "VIT-AP Food Street" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED7B3B33049F1FE0096454E /* Debug */,
+				6ED7B3B43049F1FE0096454E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED7B3B53049F1FE0096454E /* Build configuration list for PBXNativeTarget "VIT-AP Food Street" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED7B3B63049F1FE0096454E /* Debug */,
+				6ED7B3B73049F1FE0096454E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4FECBF7E24E63406BA7D274 /* Build configuration list for PBXNativeTarget "MessMenuWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3D6435308914882ECC29D2 /* Release */,
+				E6D681FF1BAFB7D8F4AFB245 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		58BFDD9DFC4886D3DACE8B59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30EEF1264E774A38DA69A43F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58BFDD9DFC4886D3DACE8B59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DCC683CE2778BADD14CA1893 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58BFDD9DFC4886D3DACE8B59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6ED7B3A03049F1FD0096454E /* Project object */;
+}

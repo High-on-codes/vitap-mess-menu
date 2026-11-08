@@ -1,0 +1,13 @@
+node_modules/
+functions/node_modules/
+.firebase/
+*.log
+build/
+DerivedData/
+xcuserdata/
+.DS_Store
+package-lock.json
+
+# Firebase config is per-deployment; copy GoogleService-Info.example.plist
+GoogleService-Info.plist
+*.xcuserstate

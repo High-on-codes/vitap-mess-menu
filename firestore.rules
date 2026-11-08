@@ -1,0 +1,51 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // The one super admin (mirrors AppConfig.adminEmail in the app — change
+    // both together) can edit every hostel block's menu.
+    function isSuperAdmin() {
+      return request.auth != null && request.auth.token.email == 'admin@example.com';
+    }
+
+    // A block operator is any signed-in account with a doc at
+    // operators/{their uid} assigning them a block. Create their Firebase
+    // Auth user in the console, then add that doc (field: block, e.g.
+    // "mh3") — there's no in-app way to grant this, on purpose.
+    function operatorAssignedBlock() {
+      return get(/databases/$(database)/documents/operators/$(request.auth.uid)).data.block;
+    }
+
+    function isOperatorFor(block) {
+      return request.auth != null &&
+        exists(/databases/$(database)/documents/operators/$(request.auth.uid)) &&
+        operatorAssignedBlock() == block;
+    }
+
+    // A write is allowed only if the document's own `block` field matches
+    // what the writer is authorized for, AND the document id itself is
+    // consistent with that data (block_plan_weekday_cycleWeek) — this
+    // second check stops an authorized operator from writing under a
+    // different block's document path while claiming their own block in
+    // the data, or vice versa.
+    function idMatchesData(day) {
+      return day == request.resource.data.block + '_' + request.resource.data.plan
+        + '_' + request.resource.data.weekday + '_' + request.resource.data.cycleWeek;
+    }
+
+    match /messMenu/{day} {
+      allow read: if true;
+      allow create, update: if idMatchesData(day) &&
+        (isSuperAdmin() || isOperatorFor(request.resource.data.block));
+      allow delete: if isSuperAdmin();
+    }
+
+    // Only the super admin manages who operates which block. An operator
+    // may read their own assignment (the app uses this to shape the UI);
+    // they can't read anyone else's or write any of it.
+    match /operators/{uid} {
+      allow read: if isSuperAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow write: if isSuperAdmin();
+    }
+  }
+}
